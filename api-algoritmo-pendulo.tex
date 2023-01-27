@@ -33,26 +33,27 @@ aprendizaje automático, aprendizaje profundo, redes neuronales, inteligencia ar
 
 \maketitle
 
-\section{Introduction}
+\section{Introducción}
 \label{sec:introduction}
-\PARstart{E}{l} problema presentado en este texto es el de la optimización, 
-que se presenta en diversas áreas de estudio como la ingeniería, la ciencia de la salud, 
-la planificación logística, la informática y las finanzas, entre otras. Estos problemas de optimización 
-suelen implicar la maximización de ganancias o/y la minimización de pérdidas con ciertas restricciones. 
-Muchos de estos problemas son complejos y resolverlos utilizando algoritmos de optimización exactos es impráctico debido al costo computacional
-y el tiempo requerido.
+\PARstart{E}{l}
+problema de la optimización es un desafío recurrente en diversas áreas, como la ingeniería, la salud, la logística, la informática y las finanzas. Muchas veces, estos problemas son complejos y requieren una gran cantidad de tiempo y recursos para ser resueltos mediante algoritmos de optimización exactos.
 
-La solución propuesta en este texto es el desarrollo de una solución de software que posea metaheurísticas en su nucleo, 
-las metaheurísticas que son algoritmos de aproximación que proporcionan soluciones óptimas o cercanas a óptimas dentro de un tiempo y restricciones computacionales razonables. 
-Las metaheurísticas son de propósito general y se pueden adaptar a diferentes problemas.
+Para abordar este desafío, se propone desarrollar una solución de software basada en metaheurísticas, que son algoritmos de aproximación capaces de proporcionar soluciones óptimas o cercanas a óptimas dentro de un tiempo y restricciones computacionales razonables. Estas técnicas son de propósito general y se pueden adaptar a diferentes problemas.
 
-Se propone desarrollar esta propuesta utilizando un nuevo algoritmo metaheurístico llamado Algoritmo de Búsqueda de Péndulo (PSA, por sus siglas en inglés), 
-que es un algoritmo basado en población en el que se busca la solución de un problema de optimización mediante un grupo de agentes que se mueven en el espacio de búsqueda 
-buscando la solución óptima según el movimiento armónico de un péndulo. El algoritmo se ha validado utilizando 13 funciones de prueba multimodales 
-y se ha comparado con PSO y SCA. Los resultados muestran que PSA es un buen algoritmo de optimización, 
-superando a PSO en 8 de las 13 funciones y a SCA en 12 de las 13 funciones. 
-Además, se ha aplicado PSA para la optimización de la distribución de vacunas en el caso de la epidemia de influenza H1N1 de Hong Kong en 2009 y se ha encontrado 
-que la distribución encontrada por PSA es mejor para reducir el número de infecciones en comparación con tres estrategias tradicionales utilizadas en la ciencia de la salud.
+En particular, se plantea utilizar el Algoritmo de Búsqueda de Péndulo (PSA), una metaheurística basada en población que busca la solución de un problema de optimización mediante un grupo de agentes moviéndose en el espacio de búsqueda, siguiendo el movimiento armónico de un péndulo. Este algoritmo ha sido validado mediante pruebas con 13 funciones multimodales y ha demostrado ser superior a otros algoritmos como PSO y SCA en varias pruebas. Además, ha sido aplicado con éxito en la optimización de la distribución de vacunas durante una epidemia de influenza.
+
+La idea es desarrollar una API Restful con NodeJS que implemente el algoritmo PSA para optimizar la distribución de medicamentos en centros de salud. Se analizará la situación actual en Chile, se evaluarán los requerimientos para implementar la aplicación, se realizará un análisis de factibilidad y se propondrá un modelo de aplicación web.
+
+\section{Marco teórico}
+\label{sec:TheoreticalFramework}
+\PARstart{E}{n} En primer lugar, se presentará una breve introducción a los problemas de optimización, incluyendo los diferentes tipos de problemas y las técnicas utilizadas para resolverlos. Se mencionarán los problemas de optimización exactos y los problemas de optimización aproximada, así como las ventajas y desventajas de cada uno.
+
+En segundo lugar, se describirán las metaheurísticas y su importancia en la resolución de problemas de optimización. Se explicará cómo las metaheurísticas proporcionan soluciones óptimas o cercanas a óptimas dentro de un tiempo y restricciones computacionales razonables. Además, se mencionarán algunos de los algoritmos metaheurísticos más comunes, como el algoritmo genético, el algoritmo de colonia de hormigas y el algoritmo de búsqueda por enjambre.
+
+En tercer lugar, se presentará una descripción detallada del algoritmo de búsqueda del péndulo, incluyendo su funcionamiento, las ventajas y desventajas de su uso, y los resultados obtenidos en estudios anteriores. Se comparará el algoritmo de búsqueda del péndulo con otros algoritmos metaheurísticos como PSO y SCA.
+
+Finalmente, se discutirá la aplicabilidad del algoritmo de búsqueda del péndulo en la optimización de la distribución de medicamentos en centros de salud. Se analizará la situación actual en Chile, se evaluarán los requerimientos para implementar la aplicación, y se propondrá un modelo de aplicación web.
+
 \EOD
 
 \end{document}
